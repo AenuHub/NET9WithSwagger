@@ -21,7 +21,3 @@ Contributions are welcome! Feel free to submit issues or pull requests to improv
 
 ### Contact
 For any questions or suggestions, reach out via [GitHub Issues](https://github.com/AenuHub/NET9WithSwagger/issues).
-
----
-
-Feel free to modify this README to include more specific details based on your project’s implementation.
