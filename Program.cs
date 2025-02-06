@@ -1,3 +1,4 @@
+using System.Text.Json;
 using Microsoft.AspNetCore.Diagnostics;
 using NET9WithSwagger.Modules.Swagger;
 
@@ -47,11 +48,14 @@ app.UseExceptionHandler(errorApp =>
         var contextFeature = context.Features.Get<IExceptionHandlerFeature>();
         if (contextFeature != null)
         {
-            await context.Response.WriteAsync(new 
+            var errorResponse = new
             {
                 StatusCode = context.Response.StatusCode,
-                Message = "Unexpected error occurred while processing your request."
-            }.ToString() ?? string.Empty);
+                Message = "Unexpected error occurred while processing your request.",
+                Details = contextFeature.Error.Message
+            };
+            
+            await context.Response.WriteAsync(JsonSerializer.Serialize(errorResponse));
         }
     });
 });
@@ -63,5 +67,11 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+// Test Exception
+app.MapGet("/testexception", () =>
+{
+    throw new Exception("Test Exception");
+});
 
 app.Run();
