@@ -1,7 +1,9 @@
 ## NET9WithSwagger
 
 ### Overview
-NET9WithSwagger is a .NET 9 Web API project template that integrates Swagger for API documentation. It demonstrates best practices for building modern web services with ASP.NET Core 9 while providing an interactive API documentation interface via Swagger UI.
+NET9WithSwagger is a .NET 9 Web API project template that integrates Swagger for API documentation. 
+It demonstrates best practices for building modern web services with .NET 9 while providing an interactive 
+API documentation interface via Swagger UI.
 
 ### Features
 - Built with **.NET 9**
