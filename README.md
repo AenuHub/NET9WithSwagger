@@ -12,7 +12,7 @@ NET9WithSwagger is a .NET 9 Web API project template that integrates Swagger for
 - Ready To Use -> Just clone and start coding!
 
 ### Screenshots
-![NET9WithSwagger]()
+![](https://github.com/user-attachments/assets/bfc17ca6-86d7-4781-9208-aef82192ad5c)
 
 ### How to Use This Template
 - Click the **Use This Template** Button
