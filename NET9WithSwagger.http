@@ -1,0 +1,6 @@
+@NET9WithSwagger_HostAddress = http://localhost:5058
+
+GET {{NET9WithSwagger_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
