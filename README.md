@@ -6,6 +6,13 @@ NET9WithSwagger is a .NET 9 Web API project template that integrates Swagger for
 ### Features
 - Built with **.NET 9**
 - API documentation using **Swagger (Swashbuckle)**
+- Swagger JWT Authentication Support -> Use JWT tokens for authentication
+- Global Error Handling -> Consistent error responses for all unhandled exceptions
+- CORS Support -> Pre-configured for development (allow all origins)
+- Ready To Use -> Just clone and start coding!
+
+### Screenshots
+![NET9WithSwagger]()
 
 ### How to Use This Template
 - Click the **Use This Template** Button
